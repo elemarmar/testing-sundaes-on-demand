@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🧪 Testing: Sundaes on Demand
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a <u>course project</u> focused on writing tests with **React Testing Library** and **Jest**. All tests were written following the ***Test Driven Development*** philosophy, which means they were written before the actual code of this simple app was written. 
 
-## Available Scripts
+The purpose of this exercise was to ==learn how to write tests using React Testing Library== so the app is pretty simple and not very stylish :nail_care: 
 
-In the project directory, you can run:
+![Kapture 2021-09-01 at 20.40.11](README.assets/Kapture 2021-09-01 at 20.40.11.gif)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project review
 
-### `yarn test`
+<!-- My thoughts on the course -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This course taught by the extraordinary teacher 👩🏻‍💻 [Bonnie Schulkin](https://github.com/bonnie) is a very recommended introduction to testing React applications with Jest and React Testing Library. The teacher is surprisingly clear in her explanations, giving enough depth to the concepts, which is appreciated by curious learners like myself. [🔗Link to her course in Udemy](https://www.udemy.com/course/react-testing-library/). I'm a great fan of Bonnie and I highly recommend you any of her courses.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Index to things related to the course -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- About the project
+- Main takeaways from the course
+- Mochi deck
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## About the project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application tested in the course is a simple :ice_cream: ice cream order application where the user can select how many scoops of ice cream and what toppings they want for their ice cream. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After selecting the ice cream and clicking on the order button, the user is shown a component displaying the order summary and a checkbox to accept terms and conditions as well as a button to send the order to the server. 
 
-### Code Splitting
+Once the order has been sent to the server, a random order number is sent back and displayed on the screen.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Main takeaways from the course
 
-### Making a Progressive Web App
+- React Testing Library encourages you to write **functional tests** and find elements by **accessibility markers**.
+- **React Testling Library** provides a **virtual DOM** for tests (it helps with rendering components, searching the virtual DOM and interacting with it) whereas **Jest** is a **test runner** (responsible for finding, running tests and determining whether tests pass or fail).
+- React Testing Library **basic syntax** (`render()`, `screen`) and the importance of finding elements by **accessibility handles** rather than by id.
+- Differences between **functional testing** and **unit testing**.
+- Differences between a **formatter** and a **linter**. Using testing-library and jest-fom eslint plugins.
+- Be aware of using `await findBy...` when something async is happening in our tests.
+- Use **Mock Service Worker** to intercept network callks and return specified responses without actually making the network calls during the tests
+  - If we want to mock an error response we have to **override** the Mock Service Worker response
+- **Debugging tips**: how to run speficic tests only, skip others, print virtual DOM to the console, common errors in tests.
+- The need to pass a **mock function** (`jest.fn()`) as a prop for components that require a function as a prop.
+- Using **Context** in tests: how to wrap a particular component in a provider in a test vs how to globally wrap all components in a provider by creating our own **custom render** method.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Mochi deck
 
-### Deployment
+I'm an absolute fan of Matt's [SRS](https://en.wikipedia.org/wiki/Spaced_repetition) application 🍡 [Mochi](https://mochi.cards/) and so I created a deck with the main concepts I learned from this course. Feel free to check it out! 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![image-20210901214321639](README.assets/image-20210901214321639.png)
 
-### `yarn build` fails to minify
+| ![icon](README.assets/icon.png) | Check out my [mochi deck](https://app.mochi.cards/decks/b25e9526-94e3-484e-89e2-5c200dd8ad4f/iDQEZUMm/Testing-React-with-Jest-and-Testing-Library) for this course! |
+| ------------------------------- | ------------------------------------------------------------ |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
