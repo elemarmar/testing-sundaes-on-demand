@@ -125,3 +125,15 @@ describe('grand total', () => {
     expect(totalElement).toHaveTextContent('3.50');
   });
 });
+test('scoops subtotal does not update if invalid number is entered', async () => {
+  render(<Options optionType="scoops" />);
+
+  const vanillaInput = await screen.findByRole('spinbutton', {
+    name: 'Vanilla',
+  });
+  userEvent.clear(vanillaInput);
+  userEvent.type(vanillaInput, '-2');
+
+  const scoopsSubtotal = screen.getByText('Scoops total: $0.00');
+  expect(scoopsSubtotal).toBeInTheDocument();
+});
