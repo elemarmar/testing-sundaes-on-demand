@@ -4,7 +4,7 @@ This is a <u>course project</u> focused on writing tests with **React Testing Li
 
 The purpose of this exercise was to ==learn how to write tests using React Testing Library== so the app is pretty simple and not very stylish :nail_care: 
 
-![Kapture 2021-09-01 at 20.40.11](README.assets/Kapture 2021-09-01 at 20.40.11.gif)
+![Kapture 2021-09-01 at 20.40.11](README.assets/hero.gif)
 
 
 
