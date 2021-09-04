@@ -68,6 +68,6 @@ I'm an absolute fan of Matt's [SRS](https://en.wikipedia.org/wiki/Spaced_repetit
 
 
 
-| <img src="./README.assets/icon.png" width="90px" /> | Check out my [mochi deck](https://app.mochi.cards/decks/b25e9526-94e3-484e-89e2-5c200dd8ad4f/iDQEZUMm/Testing-React-with-Jest-and-Testing-Library) for this course! |
+| <img src="./README.assets/icon.png" width="90px" /> | Check out my [mochi deck](https://app.mochi.cards/decks/b25e9526-94e3-484e-89e2-5c200dd8ad4f/KXn4aXIl/Testing-React-with-Jest-and-Testing-Library) for this course! |
 | ------------------------------- | ------------------------------------------------------------ |
 
